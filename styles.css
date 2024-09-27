@@ -37,14 +37,6 @@ body {
         max-width: 1320px;
     }
 }
-/* .page_height{
-   max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-} */
 
 /* ---------------Header-------------- */
 .site-header{
@@ -943,7 +935,7 @@ nav{
     color:#000;
 }
 
-.schedule_day p{
+.schedule_day span{
     font-size:16px;
     font-weight: lighter;
     color:#717275;
@@ -981,7 +973,7 @@ nav{
     border-bottom: 1px solid #dee2e6;
 }
 
-#info_block_id{
+.info_block_id{
     border-bottom:none;
 }
 
@@ -1450,6 +1442,10 @@ form .form_lineone{
     width:calc(33.33% - 12px);
 }
 
+form .error {
+    color: red;
+}
+
 form .form_lineone input{
     padding: 14px 12px;
     border: none;
@@ -1477,8 +1473,7 @@ form .form_message textarea{
     background-color: #f0f8ff;
     padding:13px 12px;
     border:none;
-    color: #212529;
-    margin-bottom:16px;  
+    color: #212529;  
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -1489,7 +1484,7 @@ form .form_message textarea:focus {
 }
 
 .form_message{
-    text-align: center;
+    text-align: start;
     margin-left: auto;
     margin-right: auto;   
     /* background-color: #0dcaf0; */
@@ -1509,6 +1504,7 @@ form .form_message textarea:focus {
     border:none;
     border-radius: 100px;
     letter-spacing: 1px;
+    margin-top: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
